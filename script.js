@@ -72,11 +72,11 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     currentSearchTerm = search.value;
 
-    if (currentSearchTerm && currentSearchTerm !== '') {
+    if (currentSearchTerm && currentSearchTerm != '') {
         currentPage = 1;
         main.innerHTML = '';
-        fetchMovies(`${searchURL}${currentSearchTerm}&page=${currentPage}`);
-        search.value = '';
+        fetchMovies(searchURL + '&query=' + currentSearchTerm);
+        // search.value = '';
     } else {
         window.location.reload();
     }
