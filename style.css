@@ -15,7 +15,6 @@
 }
 
 #form{
-    /* width: 200px; */
     display: flex;
     justify-content: flex-end;
     margin: 10px;
@@ -60,7 +59,6 @@ body{
     background-color: rgba(0, 0, 0, 0.147);
     color: white;
     position: relative;
-    overflow: hidden;
     border-radius: 15px;
     transition: width 0.5s ease-in;
 }
